@@ -1,11 +1,11 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
-    t, z := 0, 1
-    t, z = z, t
-    fmt.Println(t, z)
+	t, z := 0, 1
+	t, z = z, t
+	fmt.Println(t, z)
 }
