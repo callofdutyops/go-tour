@@ -23,4 +23,3 @@ func main() {
 	Scale(&v, 10)
 	fmt.Println(Abs(v))
 }
-
