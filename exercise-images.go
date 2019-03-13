@@ -6,7 +6,7 @@ import (
 	"image/color"
 )
 
-type Image struct{
+type Image struct {
 	Height, Width int
 }
 
@@ -19,11 +19,11 @@ func (m Image) Bounds() image.Rectangle {
 }
 
 func (m Image) At(x, y int) color.Color {
-	c := uint8(x*y)
+	c := uint8(x * y)
 	return color.RGBA{c, c, 255, 255}
 }
 
 func main() {
-	m := Image{1024,1024}
+	m := Image{1024, 1024}
 	pic.ShowImage(m)
 }
