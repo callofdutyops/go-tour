@@ -7,7 +7,7 @@ import (
 )
 
 type SafeCounter struct {
-	v map[string]int
+	v   map[string]int
 	mux sync.Mutex
 }
 

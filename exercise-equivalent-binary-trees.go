@@ -1,8 +1,8 @@
 package main
 
 import (
-	"golang.org/x/tour/tree"
 	"fmt"
+	"golang.org/x/tour/tree"
 )
 
 func WalkImpl(t *tree.Tree, ch, quit chan int) {
@@ -44,6 +44,6 @@ func Same(t1, t2 *tree.Tree) bool {
 }
 
 func main() {
-	fmt.Println("tree.New(10000) == tree.New(10000)?", Same(tree.New(10000), tree.New(10000)))
-	fmt.Println("tree.New(10000) == tree.New(20000)?", Same(tree.New(10000), tree.New(20000)))
+	fmt.Println("tree.New(1) == tree.New(1)?", Same(tree.New(1), tree.New(1)))
+	fmt.Println("tree.New(1) == tree.New(2)?", Same(tree.New(1), tree.New(2)))
 }
